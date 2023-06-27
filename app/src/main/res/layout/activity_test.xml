@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:elevation="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons_card"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="match_parent"
+            android:background="@color/backgrd_lightblue">
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                tools:text="12 Jan"
+                android:text="@string/time"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvTime"
+                app:layout_constraintStart_toStartOf="@+id/cons_card"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="@string/date"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:fontFamily="@font/avenirltstd_medium"
+                app:layout_constraintTop_toBottomOf="@id/text_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/cons_card"
+                tools:text="12:00 AM">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_110sdp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/text_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:textColor="@color/black"
+                android:text="@string/text_user"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/text_user">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_location"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:gravity="center_vertical"
+                android:text="@string/text_loc"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_user">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="@string/payment_via"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_loc"
+                tools:text="@string/payment_via">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_60sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:text="@string/item_order_price"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toRightOf="@+id/text_user"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:textSize="13sp"
+                android:text="@string/dollar"
+                app:layout_constraintLeft_toRightOf="@+id/text_loc"
+                app:layout_constraintTop_toBottomOf="@+id/text_price"
+                tools:text="@string/dollar">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_62sdp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:textColor="@color/backgrd_lightblue"
+                android:textSize="16sp"
+                android:text="@string/cash"
+                app:layout_constraintLeft_toRightOf="@+id/text_payment"
+                app:layout_constraintTop_toBottomOf="@+id/text_cash"
+                tools:text="@string/cash">
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

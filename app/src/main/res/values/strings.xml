@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Gox Shop</string>
+    <string name="hint_email_id">Email Id</string>
+    <string name="hint_password">Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+
+    <!-- Menu Title -->
+    <string name="title_home">Home</string>
+    <!-- <string name="title_history">Hisotry</string>-->
+    <string name="title_account">Account</string>
+
+
+    <!--- Incoming Orders -->
+    <string name="waiting_for_order">Waiting for orders</string>
+    <string name="empty_accepted_orders">No Accepted Orders</string>
+
+    <!--    Request Accept Activity-->
+    <string name="order_time">Order Time</string>
+    <string name="cancel">Cancel</string>
+    <string name="accept">Accept</string>
+    <string name="order_list">Order List</string>
+    <string name="notes">Notes</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="cgst">CGST</string>
+    <string name="sgst">SGST</string>
+    <string name="service_tax">Service Tax</string>
+    <string name="total">Total</string>
+    <string name="discount">Promocode Amount</string>
+    <string name="shop_discount">Shop Discount</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="dispute_created">Dispute Created</string>
+
+
+    <!--- Validation -->
+    <string name="email_empty">Email should not be empty</string>
+    <string name="email_invalid">Please enter valid email</string>
+    <string name="password_empty">Password should not be empty</string>
+    <string name="Ok">OK</string>
+
+
+    <string name="title_change_pwd">Change Password</string>
+
+
+    <integer-array name="icon_account">
+        <!--  <item>@drawable/ic_user</item>
+        <item>@drawable/ic_edit</item>-->
+        <item>@drawable/ic_padlock</item>
+    </integer-array>
+
+    <string-array name="title_account">
+        <!--    <item>@string/title_profile</item>
+        <item>@string/title_edit</item>-->
+        <item>@string/title_change_pwd</item>
+    </string-array>
+
+    <!-- Pages Title -->
+
+
+    <!-- Order accpet detail -->
+    <string name="order_preparation_title">Order Delivery Time?</string>
+    <string name="item_quantity">%s:%d</string>
+
+    <!-- Change Password -->
+    <string name="confrim_password">Confirm password</string>
+    <string name="password_not_matched">Password  does not matched</string>
+    <string name="password_updated">Password Updated Sucessfully</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="create_new_password">Create new password</string>
+    <string name="save">Save</string>
+
+    <!-- History Order detail -->
+    <string name="title_order_placed">Order Placed</string>
+    <string name="title_order_confirmed">Order Confirmed</string>
+    <string name="title_order_proceed">Order Processed</string>
+    <string name="title_order_picked">Order PickedUp</string>
+    <string name="title_order_Delivered">Order Delivered</string>
+    <string name="label_order_recived">We have received your order</string>
+    <string name="label_order_confimred">Your Order has beed Confirmed</string>
+    <string name="label_order_picked">Your order is ready to Pickup</string>
+    <string name="label_order_delivered">Your order is delivered successfully</string>
+    <string name="label_order_scheduled">Your order has been scheduled</string>
+    <string name="label_order_preparing">We are preparing your order</string>
+    <string name="date">12 Aug</string>
+    <string name="date_with_month">25/10/2001</string>
+    <string name="time">8:00AM</string>
+    <string name="text_user">William Jane</string>
+    <string name="text_loc">United Kingdom</string>
+    <string name="payment">Payment Via</string>
+    <string name="item_order_price">Price</string>
+    <string name="payment_via">PaymentVia</string>
+    <string name="cash">Cash</string>
+    <string name="dollar">$10</string>
+
+    <!--Edit Timing-->
+    <string name="edit_time">Edit Timing</string>
+    <string name="everyday">EveryDay</string>
+
+
+
+    <!--Order List-->
+
+    <string name="placed">Order Placed</string>
+    <string name="number">#888</string>
+
+
+    <!-- Payment Mode -->
+    <string name="pay_cash">Cash</string>
+    <string name="pay_card">Card</string>
+    <string name="password">Password</string>
+
+
+</resources>
